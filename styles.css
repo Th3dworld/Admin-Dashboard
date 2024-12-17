@@ -19,6 +19,9 @@
 #header{
     background-color:red ;
     grid-column: 2;
+    display: grid;
+    grid-template-rows: 50px 80px;
+
 }
 
 #main{
