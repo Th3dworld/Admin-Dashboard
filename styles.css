@@ -1,6 +1,7 @@
 #container{
     height: 100dvh;
     max-width: 100dvw;
+    min-width: fit-content;
     display: grid;
     grid-template-columns: repeat(1, minmax(300px,400px)) 3fr;
     grid-template-rows: repeat(1, 180px) 5fr;    
@@ -155,7 +156,7 @@ button{
     padding-left: 20px;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-template-rows: repeat(auto-fit,minmax(200px, 1fr));
 }
 
@@ -189,9 +190,13 @@ button{
 }
 
 #menu-1{
+    display: grid;
+    gap: 5px;
     grid-row: 3;
 }
 
 #menu-2{
+    display: grid;
+    gap: 5px;
     grid-row: 5;
 }
