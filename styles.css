@@ -40,6 +40,15 @@
     padding-top: 20px;
 }
 
+.small-text{
+    font-weight: 600;
+}
+
+.user-name{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .left{
     padding-left: 20px;
 }
@@ -227,4 +236,9 @@ button{
     width: 2rem;
     /* border: 1px solid black; */
     padding-right: px;
+}
+
+.profile-pic{
+    background-image: url(images/goat-on-red-background-sunglasses-600nw-2245704911.webp);
+    background-size: contain;
 }
