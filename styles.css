@@ -65,6 +65,7 @@
 
     align-items: start;
     grid-template-columns: 1fr 30fr;
+    padding-left: 40px;
 }
 
 #search-bar{
