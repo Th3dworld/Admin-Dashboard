@@ -42,7 +42,7 @@
     grid-auto-flow: column;
     gap: 20px;
 
-    padding-top: 15px;
+    padding-top: 0px;
     padding-left: 20px;
     align-items: center;
     grid-template-columns: 1fr 30fr;
@@ -70,4 +70,5 @@
     justify-self: right;
     padding-right: 50px;
     gap: 50px;
+    min-width: max-content;
 }
