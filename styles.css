@@ -9,7 +9,7 @@
 .plc-hldr{
     background-color: rgb(4, 0, 255);
     height: 20px;
-    width: 10px;
+    width: 30px;
 
 }
 #sidebar {
@@ -32,13 +32,28 @@
     grid-template-columns: 3fr 2fr;
 }
 
-#search-bar{
-    padding-top: 15px;
-    grid-template-columns: 1fr;
-}
-
 #main{
     background-color: black;
     grid-column: 2;
 }
 
+#search-area{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+
+    padding-top: 15px;
+    padding-left: 20px;
+    align-items: center;
+    grid-template-columns: 1fr 30fr;
+}
+
+#search-bar{
+    grid-template-columns: 1fr;
+    display: flex;
+}
+
+#search{
+    padding-left: 10px;
+    flex: 1 0 auto;
+}
