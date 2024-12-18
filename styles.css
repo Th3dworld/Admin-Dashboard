@@ -142,6 +142,7 @@ button{
     height: 400px;
     background-color: white;
     border-radius: 10px;
+    display: grid;
 }
 
 #trending{
@@ -167,4 +168,20 @@ button{
     border-radius:10px 0px 0px 10px;
     background-color: orange;
 
+}
+
+#trending{
+    grid-template-rows: repeat(auto-fit,minmax(100px, 1fr));
+}
+
+.item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5fr 15fr;
+}
+
+.item .plc-hldr{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
 }
