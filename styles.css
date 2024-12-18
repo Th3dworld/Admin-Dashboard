@@ -4,14 +4,16 @@
 
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(1, 150px) 5fr;    
+    grid-template-rows: repeat(1, 180px) 5fr;    
 }
+
 .plc-hldr{
     background-color: rgb(4, 0, 255);
     height: 20px;
     width: 30px;
 
 }
+
 #sidebar {
     background-color: aquamarine;
     padding-left: 30px;
@@ -26,13 +28,17 @@
 #header{
     background-color:red ;
     grid-column: 2;
-    gap: 20px 20px;
+    gap: 40px 20px;
     display: grid;
-    grid-template-rows: repeat(1, minmax(30px,1fr)) repeat(1,  minmax(110px, 3fr));
+    grid-template-rows: repeat(1, minmax(30px,1fr)) repeat(1,  minmax(90px, 3fr));
     grid-template-columns: 3fr 2fr;
     padding-top: 20px;
 
 
+}
+
+.header-left{
+    padding-left: 20px;
 }
 
 #main{
@@ -45,7 +51,6 @@
     grid-auto-flow: column;
     gap: 20px;
 
-    padding-left: 20px;
     align-items: start;
     grid-template-columns: 1fr 30fr;
 }
@@ -56,7 +61,6 @@
 }
 
 #search{
-    padding-left: 0px;
     border: 0px solid black;
     border-radius: 10px;
     height: 20px;
@@ -72,4 +76,15 @@
     padding-right: 50px;
     gap: 50px;
     min-width: max-content;
+}
+
+#user-details{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+#user-details #text{
+    display: grid;
+    grid-template-rows: 2fr 5fr;
 }
