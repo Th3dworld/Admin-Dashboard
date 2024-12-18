@@ -154,12 +154,20 @@ button{
 }
 
 .card{
-    height: 200px;
+    height: 250px;
     border-radius:10px;
     background-color: white;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 10px 1fr;
+}
+
+.card .text{
+    display: grid;
+    grid-column:2;
+    grid-template-rows: 1fr 5fr 2fr;
+    padding-left: 30px;
+    padding-top: 40px;
 }
 
 .vert-card{
@@ -188,7 +196,7 @@ button{
     grid-template-rows: 10fr 1fr 10fr;
 }
 
-.card #text{
+.card .color{
     grid-column:1;
     border-radius:10px 0px 0px 10px;
     background-color: orange;
