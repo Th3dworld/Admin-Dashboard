@@ -49,6 +49,11 @@
     font-weight: 600;
 }
 
+#top-menu-area .profile-pic{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
 .left{
     padding-left: 20px;
 }
@@ -62,8 +67,8 @@
     display: grid;
     grid-auto-flow: column;
     gap: 20px;
-
-    align-items: start;
+    height: 40px;
+    align-items: end;
     grid-template-columns: 1fr 30fr;
     padding-left: 40px;
 }
@@ -83,11 +88,11 @@
 #top-menu-area{
     display: grid;
     grid-auto-flow: column;
-    align-items: start;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr) 5fr;
     justify-self: right;
     padding-right: 50px;
-    gap: 50px;
+    gap: 20px;
     min-width: max-content;
 }
 
