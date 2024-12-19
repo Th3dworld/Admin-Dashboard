@@ -335,6 +335,7 @@ button{
 
 .vert-card hr{
     margin: 0.5rem 20px;
+    grid-row: 4;
 }
 
 .vert-card #Announcements{
@@ -344,6 +345,16 @@ button{
 
 #Announcements .content{
     display: grid;
-    grid-template-rows: 1fr 3fr .1fr;
-    padding-top: 10px;
+    grid-template-rows: 1fr 1fr 2fr .3fr;
+}
+
+.vert-title{
+    font-size: 1.2rem;
+    font-weight: 400;
+    grid-row: 2;
+}
+
+.vert-text{
+    grid-row: 3;
+    padding-right: 20px;
 }
