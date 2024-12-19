@@ -36,7 +36,7 @@
     gap: 40px 20px;
     display: grid;
     grid-template-rows: repeat(1, minmax(30px,1fr)) repeat(1,  minmax(90px, 3fr));
-    grid-template-columns: repeat(1, minmax(50ch,3fr)) 2fr;
+    grid-template-columns: repeat(1, minmax(50ch,5fr)) 2fr;
     padding-top: 20px;
 }
 
@@ -77,6 +77,11 @@
 #search-bar{
     grid-template-columns: 1fr;
     display: flex;
+}
+
+#search-icona{
+    display: grid;
+    align-content: center;
 }
 
 #search{
@@ -350,11 +355,28 @@ button{
 
 .vert-title{
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
     grid-row: 2;
 }
 
 .vert-text{
     grid-row: 3;
     padding-right: 20px;
+    color: rgb(132, 129, 129);
+}
+
+.card .content{
+    color: rgb(132, 129, 129);
+}
+
+.smaller{
+    font-size: 1.5rem;
+}
+
+#menu-buttons{
+    display: grid;
+    justify-self: right;
+    justify-items: left;
+    padding-right: 50px;
+    width: 500px;
 }
