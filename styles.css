@@ -112,7 +112,7 @@
     display: grid;
     grid-template-columns: 1fr 7fr;
     align-items: center;
-    min-width: min-content;
+    min-width: max-content;
 }
 
 #user-details #text{
@@ -197,10 +197,10 @@ button{
 }
 
 .text .content{
-    font-size: 1.3rem;
+    font-size: 1.1em;
     font-weight: 200;
-    text-align: justify;
-    width: clamp(25ch, 28ch, 30ch);
+    text-align: left;
+    padding-right: 20px;
 }
 
 .text .icons{
@@ -231,6 +231,7 @@ button{
     border-radius: 10px;
     display: grid;
     min-width: min-content;
+    min-height: max-content;
 }
 
 #trending{
@@ -241,7 +242,7 @@ button{
     padding-left: 20px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit,minmax(200px, 1fr));
 }
 
@@ -350,7 +351,7 @@ button{
 
 .vert-card #Announcements{
     grid-template-rows: 1fr 1fr 1fr;
-
+    grid-row: 1/2;
 }
 
 #Announcements .content{
