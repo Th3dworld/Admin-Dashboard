@@ -321,5 +321,8 @@ button{
     background-image: url(images/goon.jpg);
     background-size: contain;
     background-position: 7px;
+}
 
+.text-dets{
+    color: rgb(111, 111, 111);
 }
