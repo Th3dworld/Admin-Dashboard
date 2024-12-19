@@ -158,17 +158,40 @@ button{
     border-radius:10px;
     background-color: white;
     display: grid;
+    gap: 30px;
     grid-auto-flow: column;
     grid-template-columns: 10px 1fr;
+}
+
+.card .color{
+    grid-column:1;
+    border-radius:10px 0px 0px 10px;
+    background-color: orange;
+    height: 250px;
+
 }
 
 .card .text{
     display: grid;
     grid-column:2;
     grid-template-rows: 1fr 5fr 2fr;
-    padding-left: 30px;
+    height: 250px;
+}
+
+.text .title{
+    font-size: 1.5rem;
+    font-weight: 500;
     padding-top: 40px;
 }
+
+.text .content{
+    font-size: 1.3rem;
+    font-weight: 200;
+    text-align: justify;
+    width: clamp(25ch, 28ch, 30ch);
+}
+
+
 
 .vert-card{
     height: 400px;
@@ -196,12 +219,7 @@ button{
     grid-template-rows: 10fr 1fr 10fr;
 }
 
-.card .color{
-    grid-column:1;
-    border-radius:10px 0px 0px 10px;
-    background-color: orange;
 
-}
 
 #trending{
     grid-template-rows: repeat(auto-fit,minmax(100px, 1fr));
